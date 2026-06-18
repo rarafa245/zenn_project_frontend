@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenn | Meu Perfil</title>
+    <link rel="stylesheet" href="../styles/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-body text-dark font-sans flex min-h-screen">
+
+    <aside class="sidebar-transition w-20 hover:w-60 bg-card border-r border-slate-200 h-screen fixed left-0 top-0 z-50 flex flex-col py-6 group">
+        <div class="font-extrabold text-2xl px-6 mb-10 text-dark">
+            Z<span class="text-accent">.</span>
+        </div>
+        <nav class="w-full">
+            <ul class="list-none m-0 p-0">
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="01_home.html" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">🏠</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="02_analytics.html" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">📊</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Analytics</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="03_zennia.html" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">✨</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">ZennIA</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-primary font-bold flex items-center gap-5 no-underline">
+                        <span class="text-xl">👤</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Meu Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="flex-1 ml-20 px-16 py-10">
+        <header class="flex justify-between items-center mb-10">
+            <div>
+                <h1 class="text-3xl font-extrabold text-dark">Meu Perfil<span class="text-primary">.</span></h1>
+            </div>
+            <nav class="flex items-center gap-4">
+                <button class="text-xl p-2 rounded-full hover:bg-slate-100 transition-colors">🔔</button>
+                <div class="w-9 h-9 bg-primary/80 rounded-full"></div>
+            </nav>
+        </header>
+
+        <main class="w-full">
+            
+            <section class="bg-card p-10 rounded-2xl shadow-sm border border-slate-100 flex justify-between items-center mb-10">
+                <div class="flex items-center gap-8">
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent shrink-0"></div>
+                    <div class="text-dark">
+                        <h2 class="text-2xl font-bold mb-1">Rafael Ferreira</h2>
+                        <p class="text-light mb-3">rafael@email.com.br</p>
+                        <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-bold">Usuário Premium</span>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <button class="bg-accent hover:opacity-90 text-dark font-bold px-6 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02]">
+                        Fazer Teste de Perfil
+                    </button>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-dark font-bold px-6 py-3 rounded-xl transition-colors">
+                        Configurações
+                    </button>
+                </div>
+            </section>
+
+            <section class="bg-card p-8 rounded-2xl shadow-sm border border-slate-100 mb-10">
+                <div class="mb-4">
+                    <h3 class="text-lg font-bold text-dark">Características do Perfil Financeiro</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-200">
+                                <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Atributo</th>
+                                <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Descrição</th>
+                                <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Nível/Tipo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                <td class="py-5 text-sm font-bold text-dark">Tolerância ao Risco</td>
+                                <td class="py-5 text-sm text-light">Capacidade de lidar com oscilações de mercado.</td>
+                                <td class="py-5"><span class="bg-indigo-50 text-primary text-xs font-semibold px-3 py-1.5 rounded-lg">Conservador</span></td>
+                            </tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                <td class="py-5 text-sm font-bold text-dark">Objetivo Principal</td>
+                                <td class="py-5 text-sm text-light">Foco atual do planejamento financeiro.</td>
+                                <td class="py-5"><span class="bg-accent-tagBg text-accent-tagText text-xs font-semibold px-3 py-1.5 rounded-lg">Reserva de Emergência</span></td>
+                            </tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                <td class="py-5 text-sm font-bold text-dark">Consumo Mensal</td>
+                                <td class="py-5 text-sm text-light">Comportamento em relação a gastos variáveis.</td>
+                                <td class="py-5"><span class="bg-sky-50 text-sky-700 text-xs font-semibold px-3 py-1.5 rounded-lg">Moderado</span></td>
+                            </tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                <td class="py-5 text-sm font-bold text-dark">Planejamento</td>
+                                <td class="py-5 text-sm text-light">Frequência de acompanhamento dos dados.</td>
+                                <td class="py-5"><span class="bg-accent-tagBg text-accent-tagText text-xs font-semibold px-3 py-1.5 rounded-lg">Diário</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-card p-6 rounded-2xl shadow-sm border border-transparent hover:border-accent border-slate-100 cursor-pointer transition-all duration-200 hover:-translate-y-1">
+                    <h4 class="font-bold text-base mb-2 text-dark">Segurança</h4>
+                    <p class="text-xs text-light">Alterar senha e 2FA</p>
+                </div>
+                <div class="bg-card p-6 rounded-2xl shadow-sm border border-transparent hover:border-accent border-slate-100 cursor-pointer transition-all duration-200 hover:-translate-y-1">
+                    <h4 class="font-bold text-base mb-2 text-dark">Notificações</h4>
+                    <p class="text-xs text-light">Alertas de gastos e IA</p>
+                </div>
+                <div class="bg-card p-6 rounded-2xl shadow-sm border border-transparent hover:border-accent border-slate-100 cursor-pointer transition-all duration-200 hover:-translate-y-1">
+                    <h4 class="font-bold text-base mb-2 text-dark">Assinatura</h4>
+                    <p class="text-xs text-light">Gerenciar plano Zenn+</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
