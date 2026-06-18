@@ -1,0 +1,12 @@
+{
+  "name": "zenn-frontend",
+  "version": "1.0.0",
+  "description": "Painel Financeiro Zenn",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/styles/01_home.css -o ./src/styles/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
