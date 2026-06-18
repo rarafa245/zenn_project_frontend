@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenn | ZennIA Chat</title>
+    <link rel="stylesheet" href="../styles/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-body text-dark font-sans flex h-screen overflow-hidden">
+
+    <aside class="sidebar-transition w-20 hover:w-60 bg-card border-r border-slate-200 h-screen fixed left-0 top-0 z-50 flex flex-col py-6 group">
+        <div class="font-extrabold text-2xl px-6 mb-10 text-dark">
+            Z<span class="text-accent">.</span>
+        </div>
+        <nav class="w-full">
+            <ul class="list-none m-0 p-0">
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="01_home.html" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">🏠</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="02_analytics.html" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">📊</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Analytics</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-primary font-bold flex items-center gap-5 no-underline">
+                        <span class="text-xl">✨</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">ZennIA</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">👤</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Meu Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="flex-1 ml-20 mr-72 flex flex-col bg-white h-screen">
+        
+        <header class="px-8 py-6 border-b border-slate-200 flex justify-between items-center bg-white shrink-0">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center text-xl font-bold">
+                    ✨
+                </div>
+                <div>
+                    <h2 class="text-base font-bold text-dark">ZennIA</h2>
+                    <span class="text-xs text-emerald-500 font-medium">Online • Analisando seus dados financeiros</span>
+                </div>
+            </div>
+            <div>
+                <div class="w-9 h-9 bg-slate-300 rounded-full"></div>
+            </div>
+        </header>
+
+        <div class="flex-1 p-8 overflow-y-auto flex flex-col gap-6 bg-[#fcfdfe]" id="chatMessages">
+            
+            <div class="flex max-w-[80%] self-end">
+                <div class="bg-primary text-white p-4 rounded-2xl rounded-br-none text-sm leading-relaxed shadow-sm">
+                    Como foi meu desempenho em relação à meta de poupança no mês passado?
+                </div>
+            </div>
+            
+            <div class="flex max-w-[80%] self-start">
+                <div class="bg-slate-100 text-dark p-4 rounded-2xl rounded-bl-none text-sm leading-relaxed border-l-4 border-accent shadow-sm">
+                    <p class="mb-2">Olá! Em Março, você superou sua meta em <strong class="font-bold text-dark">R$ 400,00</strong>. 🎉</p>
+                    <p>Seu saldo final foi de R$ 1.200,00, enquanto a meta era R$ 800,00. Notei que o bônus do seu freelance foi o principal fator para esse resultado positivo.</p>
+                </div>
+            </div>
+
+            <div class="flex max-w-[80%] self-end">
+                <div class="bg-primary text-white p-4 rounded-2xl rounded-br-none text-sm leading-relaxed shadow-sm">
+                    Posso gastar R$ 200,00 com lazer este final de semana?
+                </div>
+            </div>
+
+            <div class="flex max-w-[80%] self-start">
+                <div class="bg-slate-100 text-dark p-4 rounded-2xl rounded-bl-none text-sm leading-relaxed border-l-4 border-accent shadow-sm">
+                    <p class="mb-2">Analisando sua provisão de gastos fixos, você ainda tem <strong class="font-bold text-dark">R$ 450,00</strong> de margem no orçamento de lazer deste mês.</p>
+                    <p>Pode gastar os R$ 200,00 com tranquilidade, isso não afetará sua meta de poupança atual.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="p-8 border-t border-slate-200 bg-white shrink-0">
+            <div class="flex items-center bg-slate-100 px-4 py-2 rounded-xl gap-3 border border-transparent focus-within:border-slate-300 transition-colors">
+                <input type="text" placeholder="Pergunte sobre seus gastos, metas ou investimentos..." class="flex-1 border-none bg-transparent p-3 text-sm text-dark outline-none placeholder:text-light">
+                <button class="bg-primary text-white p-3 rounded-xl hover:scale-105 active:scale-95 transition-transform duration-200 shrink-0">
+                    <svg viewBox="0 0 24 24" width="20" height="20" class="transform rotate-0"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <aside class="w-72 bg-card border-l border-slate-200 p-6 fixed right-0 top-0 h-screen z-40 flex flex-col">
+        <h3 class="text-xs font-bold text-light uppercase tracking-wider mb-6">Conversas Passadas</h3>
+        <div class="flex flex-col gap-3 overflow-y-auto">
+            
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-indigo-50 border-l-3 border-primary cursor-pointer">
+                <span class="text-lg">💬</span>
+                <div>
+                    <p class="text-xs font-bold text-dark">Análise de Março</p>
+                    <span class="text-[10px] text-light block mt-0.5">Hoje</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50 cursor-pointer transition-colors">
+                <span class="text-lg">💬</span>
+                <div>
+                    <p class="text-xs font-semibold text-dark">Dúvida sobre Imposto</p>
+                    <span class="text-[10px] text-light block mt-0.5">Ontem</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50 cursor-pointer transition-colors">
+                <span class="text-lg">💬</span>
+                <div>
+                    <p class="text-xs font-semibold text-dark">Planejamento Viagem</p>
+                    <span class="text-[10px] text-light block mt-0.5">12 de Abril</span>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+</body>
+</html>
