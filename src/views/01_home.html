@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zenn | Sua Inteligência Financeira</title>
+        <link rel="stylesheet" href="../styles/output.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body class="bg-body text-dark font-sans flex min-h-screen">
+
+    <aside class="sidebar-transition w-20 hover:w-60 bg-card border-r border-slate-200 h-screen fixed z-50 flex flex-col py-6 group">
+        <div class="font-extrabold text-2xl px-6 mb-10 text-dark">
+            Z<span class="text-accent">.</span>
+        </div>
+        <nav class="w-full">
+            <ul class="list-none m-0 p-0">
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-primary font-bold flex items-center gap-5 no-underline">
+                        <span class="text-xl">🏠</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">📊</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Analytics</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">✨</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">ZennIA</span>
+                    </a>
+                </li>
+                <li class="sidebar-nav-item px-6 py-3 cursor-pointer transition-colors duration-200 hover:bg-slate-100">
+                    <a href="#" class="text-light font-medium flex items-center gap-5 no-underline">
+                        <span class="text-xl">👤</span> 
+                        <span class="opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">Meu Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="flex-1 ml-20 px-16 py-10">
+        <header class="flex justify-between items-center mb-10">
+            <div>
+                <h1 class="text-3xl font-extrabold text-dark">Zenn<span class="text-primary">.</span></h1>
+            </div>
+            <nav class="flex items-center gap-4">
+                <button class="text-xl p-2 rounded-full hover:bg-slate-100 transition-colors">🔔</button>
+                <div class="w-10 h-10 bg-accent rounded-full"></div>
+            </nav>
+        </header>
+
+        <main class="w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                <div class="bg-primary text-white p-6 rounded-2xl shadow-sm">
+                    <span class="text-xs text-white/70 font-semibold block mb-2 uppercase tracking-wider">Saldo Disponível</span>
+                    <div class="text-2xl font-extrabold">R$ 300,00</div>
+                </div>
+                <div class="bg-accent text-dark p-6 rounded-2xl shadow-sm">
+                    <span class="text-xs text-light font-semibold block mb-2 uppercase tracking-wider">Receitas</span>
+                    <div class="text-2xl font-extrabold">R$ 500,00</div>
+                </div>
+                <div class="bg-card p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <span class="text-xs text-light font-semibold block mb-2 uppercase tracking-wider">Despesas</span>
+                    <div class="text-2xl font-extrabold text-red-500">R$ 200,00</div>
+                </div>
+                <div class="bg-card p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <span class="text-xs text-light font-semibold block mb-2 uppercase tracking-wider">Provisão (Futuros)</span>
+                    <div class="text-2xl font-extrabold text-dark">R$ 100,00</div>
+                </div>
+            </div>
+
+            <section class="bg-card p-8 rounded-2xl mb-10 shadow-sm border border-slate-100">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-bold text-dark">Meta de Poupança</h3>
+                    <span class="text-sm text-light">Objetivo: <strong class="text-dark font-bold">R$ 600,00</strong></span>
+                </div>
+                <div class="w-full bg-slate-100 h-3 rounded-full overflow-hidden mt-4">
+                    <div class="h-full bg-gradient-to-r from-primary to-accent rounded-full" style="width: 50%;"></div>
+                </div>
+                <span class="text-primary font-extrabold mt-3 block">50%</span>
+            </section>
+
+            <div class="flex flex-col gap-8">
+                <section class="bg-card p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg font-bold text-dark">Fluxo de Caixa Mensal</h3>
+                        <div class="flex gap-3">
+                            <button class="bg-slate-100 hover:bg-slate-200 text-dark font-bold px-4 py-2 rounded-xl text-sm transition-colors">Editar</button>
+                            <button class="bg-transparent hover:bg-red-50 text-red-500 font-bold px-4 py-2 rounded-xl text-sm transition-colors">Deletar</button>
+                            <button class="bg-accent hover:bg-accent-hover text-dark font-bold px-4 py-2 rounded-xl text-sm transition-transform hover:-translate-y-0.5 duration-200">
+                                + Cadastrar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="border-b border-slate-200">
+                                    <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Título</th>
+                                    <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Tag</th>
+                                    <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Data</th>
+                                    <th class="text-right py-4 text-xs font-bold text-light uppercase tracking-wider">Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-5 text-sm text-dark font-medium">Compras de Supermercado</td>
+                                    <td class="py-5"><span class="bg-red-50 text-red-500 text-xs font-bold px-3 py-1 rounded-full">Essenciais</span></td>
+                                    <td class="py-5 text-sm text-light">01/04/2026</td>
+                                    <td class="py-5 text-sm text-right font-bold text-red-500">- R$ 120,00</td>
+                                </tr>
+                                <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-5 text-sm text-dark font-medium">Recebimento Freelance</td>
+                                    <td class="py-5"><span class="bg-accent-tagBg text-accent-tagText text-xs font-bold px-3 py-1 rounded-full">Trabalho</span></td>
+                                    <td class="py-5 text-sm text-light">01/04/2026</td>
+                                    <td class="py-5 text-sm text-right font-bold text-accent-hover">+ R$ 500,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="bg-card p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg font-bold text-dark">Meses Anteriores</h3>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="border-b border-slate-200">
+                                    <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Mês</th>
+                                    <th class="text-left py-4 text-xs font-bold text-light uppercase tracking-wider">Saldo Acumulado</th>
+                                    <th class="text-center py-4 text-xs font-bold text-light uppercase tracking-wider">Meta Batida</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-5 text-sm text-dark font-medium">Janeiro 2026</td>
+                                    <td class="py-5 text-sm font-bold text-accent-hover">R$ 2.010,00</td>
+                                    <td class="py-5 text-center text-lg">✅</td>
+                                </tr>
+                                <tr class="border-b border-slate-50 hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-5 text-sm text-dark font-medium">Dezembro 2025</td>
+                                    <td class="py-5 text-sm font-bold text-red-500">- R$ 2.000,00</td>
+                                    <td class="py-5 text-center text-lg">❌</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
